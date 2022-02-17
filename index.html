@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Solver</title>
+</head>
+<body>
+    <main>
+        <article class="instructions">
+            <h1>WORDLE SOLVER</h1> <hr> 
+            <p>Enter your <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a> guess and mark the letters to find possible solutions.</p>
+        </article>
+        <form class="inputs">
+            <div class="letter">
+                <input class="letter__input" type="text" autocomplete="off" id="one" maxlength="1" tabindex="1"/>
+                <fieldset class="letter__buttons">
+                    <input class="letter__radio" type="radio" name="one" value="black" tabindex="6" checked>
+                    <input class="letter__radio" type="radio" name="one" value="yellow" tabindex="7">
+                    <input class="letter__radio" type="radio" name="one" value="green" tabindex="8">
+                </fieldset>
+            </div>
+            <div class="letter">
+                <input class="letter__input" type="text" autocomplete="off" id="two" maxlength="1" tabindex="2"/>
+                <fieldset class="letter__buttons">
+                    <input class="letter__radio" type="radio" name="two" value="black" tabindex="9" checked>
+                    <input class="letter__radio" type="radio" name="two" value="yellow" tabindex="10">
+                    <input class="letter__radio" type="radio" name="two" value="green" tabindex="11">
+                </fieldset>
+            </div>
+            <div class="letter">
+                <input class="letter__input" type="text" autocomplete="off" id="three" maxlength="1" tabindex="3"/>
+                <fieldset class="letter__buttons">
+                    <input class="letter__radio" type="radio" name="three" value="black" tabindex="12" checked>
+                    <input class="letter__radio" type="radio" name="three" value="yellow" tabindex="13">
+                    <input class="letter__radio" type="radio" name="three" value="green" tabindex="14">
+                </fieldset>
+            </div>
+            <div class="letter">
+                <input class="letter__input" type="text" autocomplete="off" id="four" maxlength="1" tabindex="4"/>
+                <fieldset class="letter__buttons">
+                    <input class="letter__radio" type="radio" name="four" value="black" tabindex="15" checked>
+                    <input class="letter__radio" type="radio" name="four" value="yellow" tabindex="16">
+                    <input class="letter__radio" type="radio" name="four" value="green" tabindex="17">
+                </fieldset>
+            </div>
+            <div class="letter">
+                <input class="letter__input" type="text" autocomplete="off" id="five" maxlength="1" tabindex="5"/>
+                <fieldset class="letter__buttons">
+                    <input class="letter__radio" type="radio" name="five" value="black" tabindex="18" checked>
+                    <input class="letter__radio" type="radio" name="five" value="yellow" tabindex="19">
+                    <input class="letter__radio" type="radio" name="five" value="green" tabindex="20">
+                </fieldset>
+            </div>
+            <input class="submit" type="submit" value="Find Solutions" tabindex="21" disabled/>
+        </form>
+        <section class="suggestions"></section>
+    </main>
+</body>
+</html>
